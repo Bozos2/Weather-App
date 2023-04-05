@@ -1,0 +1,171 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins Bold";
+  src: url(fonts/Poppins-ExtraBold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.home {
+  width: 100%;
+  height: 110vh;
+  background-color: #468fea;
+  color: white;
+}
+
+.weather-container {
+  max-width: 900px;
+  width: 100%;
+  /* height: 650px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.45);
+  background-size: cover;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(500px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.container-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+
+.place {
+  max-width: 300px;
+  width: 100%;
+  height: 100px;
+  padding: 15px 20px;
+  font-size: 35px;
+}
+
+.search-bar {
+  max-width: 598px;
+  width: 100%;
+  height: 100px;
+  padding: 25px 80px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  position: relative;
+}
+
+.search {
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  border-radius: 5px;
+  height: 40px;
+  width: 220px;
+  padding: 5px 18px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.45);
+  color: #ff8c00;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.search-button {
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.45);
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  position: absolute;
+  height: 45px;
+  left: 52%;
+  top: 22px;
+  cursor: pointer;
+}
+
+.icon {
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.temperature,
+.stats {
+  max-width: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 2px;
+}
+
+.head-temp {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.max-temp,
+.min-temp {
+  font-size: 20px;
+}
+
+.cur-stats {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.wind {
+  margin-left: -20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.humidity {
+  margin-left: -55px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.humidity-img {
+  padding-right: 15px;
+}
+
+.next-7days {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.monday {
+  max-width: 140px;
+  width: 100%;
+  height: 180px;
+  margin-top: 25px;
+  border-radius: 20px;
+  border: 2px solid white;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.day {
+  font-size: 20px;
+}
+
+.temperature-mini {
+  font-size: 18px;
+}
